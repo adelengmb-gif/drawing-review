@@ -68,7 +68,7 @@ if uploaded_file is not None:
                 with st.expander("查看结构化数据 (供 CRM 集成用)"):
                     st.json({
                         "status": "success", 
-                        "ai_engine": "gemini-1.5-pro",
+                        "ai_engine": "gemini-1.5-flash",
                         "raw_output": response.text[:100] + "..."
                     })
                     
