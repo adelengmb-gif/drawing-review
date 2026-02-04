@@ -19,8 +19,8 @@ try:
             st.stop()
 
     genai.configure(api_key=api_key)
-    # 配置模型 (使用支持视觉的 Gemini 1.5 Pro)
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    # 配置模型 (使用支持视觉的 Gemini 1.5 flash)
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
 except Exception as e:
     st.error(f"配置失败: {e}")
@@ -73,4 +73,5 @@ if uploaded_file is not None:
                     })
                     
             except Exception as e:
+
                 st.error(f"分析失败，请重试。错误信息: {e}")
