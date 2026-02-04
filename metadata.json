@@ -1,0 +1,5 @@
+{
+  "name": "图纸哨兵",
+  "description": "安全、本地优先的技术图纸脱敏工具，具备可选的 AI 自动遮罩功能。",
+  "requestFramePermissions": []
+}
